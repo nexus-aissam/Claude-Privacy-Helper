@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Chat Privacy",
+  "version": "1.0",
+  "description": "Add privacy blur to Claude chat sidebar",
+
+  "permissions": ["storage", "activeTab"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "css": ["blur.css"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Claude Privacy"
+  },
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

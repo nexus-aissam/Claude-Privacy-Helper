@@ -1,0 +1,72 @@
+/* Claude Privacy Blur Styles */
+.claude-privacy-blur .claude-chat-blurred {
+  filter: blur(var(--blur-intensity, 5px)) !important;
+  transition: filter 0.3s ease !important;
+}
+
+.claude-privacy-blur .claude-chat-blurred:hover {
+  filter: blur(calc(var(--blur-intensity, 5px) * 0.3)) !important;
+}
+
+/* Enhanced selectors for Claude's interface */
+.claude-privacy-blur a[href*="/chat/"]:not([href*="/new"]) {
+  filter: blur(var(--blur-intensity, 5px)) !important;
+  transition: filter 0.3s ease !important;
+}
+
+.claude-privacy-blur a[href*="/chat/"]:not([href*="/new"]):hover {
+  filter: blur(calc(var(--blur-intensity, 5px) * 0.3)) !important;
+}
+
+/* Target specific Claude UI elements */
+.claude-privacy-blur [data-testid="starred-items"] a,
+.claude-privacy-blur [data-testid="recent-items"] a {
+  filter: blur(var(--blur-intensity, 5px)) !important;
+  transition: filter 0.3s ease !important;
+}
+
+.claude-privacy-blur [data-testid="starred-items"] a:hover,
+.claude-privacy-blur [data-testid="recent-items"] a:hover {
+  filter: blur(calc(var(--blur-intensity, 5px) * 0.3)) !important;
+}
+
+/* Smooth animation */
+* {
+  transition: filter 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+}
+
+/* Floating Toggle Button */
+.claude-privacy-float-btn {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  background: #333 !important;
+  color: white !important;
+  font-size: 20px !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  z-index: 999999 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.claude-privacy-float-btn:hover {
+  background: #404040 !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4) !important;
+}
+
+.claude-privacy-float-btn.active {
+  background: linear-gradient(135deg, #ff6b35, #f7931e) !important;
+}
+
+.claude-privacy-float-btn.active:hover {
+  background: linear-gradient(135deg, #ff7a45, #fa9f2e) !important;
+}
