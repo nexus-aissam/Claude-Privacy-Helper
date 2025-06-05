@@ -27,7 +27,7 @@
 ## 🚀 Quick Start
 
 ### Chrome Web Store (Recommended)
-1. Visit [Claude Chat Privacy on Chrome Web Store](link-when-published)
+1. Visit [Claude Chat Privacy on Chrome Web Store](https://chromewebstore.google.com/detail/claude-chat-privacy/gfaolkdjhgabdeibppikbkimeipgbcep?utm_source=item-share-cb)
 2. Click "Add to Chrome"
 3. Visit claude.ai and look for the floating 🔒 button
 
@@ -226,7 +226,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## 📈 Stats
 
 
-![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/your-extension-id)
+![Chrome Web Store users](https://chromewebstore.google.com/detail/claude-chat-privacy/gfaolkdjhgabdeibppikbkimeipgbcep?utm_source=item-share-cb)
 
 ---
 
